@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Next TI</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-itens">
+                <div class="logo" style="background-image: url(img/logo.svg);"></div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Soluções</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Cases</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <button class="primary">Desenvolva seu projeto</button>
+                </div>
+                <button class="hamburger so-mb" onclick="menuMobile();this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="50px" height="50px" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>   
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <div class="col2">
+                <div class="left">
+                    <h2>Next TI, o lugar certo para desenvolver sua ideia ou projeto</h2>
+                    <div class="buttons">
+                        <button class="primary">Desenvolva seu projeto</button>
+                        <button class="secondary">Sobre nós</button>
+                    </div>
+    
+                </div>
+                <div class="right">
+                    <div class="image" style="background-image: url(img/ideais.jpg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="solucoes">
+        <div class="container">
+            <div class="col2">
+                <div class="left">
+                    <div class="image" style="background-image: url(img/desenvolvimento.jpg);"></div>
+                </div>
+                <div class="right">
+                    <h2>Temos a solução ideal
+                        para o seu negócio</h2>
+                    <p>Landing Pages;</p>
+                    <p>Lojas virtuais;</p>
+                    <p>Apps Android e IOS;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cases">
+        <div class="container">
+            <h2>Conheça alguns de nossos projetos</h2>
+            <div class="projetos">
+                <div class="projeto-item">
+                    <div class="left">
+                        <h1>PATRE</h1>
+                        <span>Landing Page</span>
+                        <p>A PATRE é uma ORG de reabilitação localizada em Antônio Prado no RS</p>
+                        <button class="primary">Conhecer o projeto</button>
+                    </div>
+                    <div class="right">
+                        <div class="image" style="background-image: url(img/patre.png);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formulario" class="formulario container">
+        <h2>Como podemos ajudar o seu negócio?</h2>
+        <p>Tenho interesse em:</p>
+        <div class="options">
+            <div onclick="formClick('development')" id="development" class="item">
+                <span>Landing Page</span>
+            </div>
+            <div onclick="formClick('analytics-item')" id="analytics-item" class="item">
+                <span>App Android ou IOS</span>
+            </div>
+            <div onclick="formClick('outsourcing-item')" id="outsourcing-item" class="item">
+                <span>Loja Virtual</span>
+            </div>
+        </div>
+        <form action="post" id="email">
+            <div class="form-input">
+                <input type="text" class="form-control" id="description" required>
+                <label for="description">Descreva o seu projeto e objetivos*</label>
+            </div>
+            <div class="col2-form">
+                <div class="left">
+                    <div class="form-input">
+                        <input type="text" class="form-control" id="name" required>
+                        <label for="description">Nome*</label>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" class="form-control" id="company" required>
+                        <label for="description">Empresa*</label>
+                    </div> 
+                </div>
+                <div class="right">
+                    <div class="form-input">
+                        <input type="email" class="form-control" id="email" required>
+                        <label for="description">Email*</label>
+                    </div>
+                    <div class="form-input">
+                        <input type="text" class="form-control" id="office" required>
+                        <label for="description">Telefone*</label>
+                    </div> 
+                </div>
+            </div>    
+            <button class="primary">Enviar mensagem</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <div class="container">
+        <div class="asinc-logo-footer" style="background-image: url(img/logo.png);"></div>
+        <div class="footer-items">
+            <div class="footer-item">
+                <ul>
+                    <li class="title">Informações de contato</li>
+                    <li>
+                        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                        <a>Rua Ervino Stoll 799</a>
+                    </li>
+                    <li>
+                        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                        <a href="mailto:contato@asinc.com.br">samuelhauschild15@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H8.28C8.48979 3.00016 8.69422 3.0663 8.86436 3.18905C9.03449 3.3118 9.1617 3.48496 9.228 3.684L10.726 8.177C10.8019 8.40534 10.7929 8.65339 10.7007 8.87564C10.6085 9.0979 10.4393 9.27945 10.224 9.387L7.967 10.517C9.07332 12.9655 11.0345 14.9267 13.483 16.033L14.613 13.776C14.7205 13.5607 14.9021 13.3915 15.1244 13.2993C15.3466 13.2071 15.5947 13.1981 15.823 13.274L20.316 14.772C20.5152 14.8383 20.6885 14.9657 20.8112 15.136C20.934 15.3064 21.0001 15.511 21 15.721V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H18C9.716 21 3 14.284 3 6V5Z" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                        <a href="tel:(51) 980156851">(51) 980156851</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li class="title">Mapa do site</li>
+                    <li>
+                        <a onclick="moveTo('servicos')">Quem somos</a>
+                    </li>
+                    <li>
+                        <a onclick="moveTo('solucoes')">Soluções</a>
+                    </li>
+                    <li>
+                        <a onclick="moveTo('formulario')">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li class="title">Siga nossas redes!</li>
+                    <li>
+                        <div class="icon">
+
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.63218 19.8918V8.78414H4.2023V19.8918H7.63218ZM5.91784 7.26785C7.11368 7.26785 7.85816 6.41485 7.85816 5.34893C7.83569 4.25881 7.11368 3.42969 5.94062 3.42969C4.76665 3.42969 4 4.25881 4 5.34893C4 6.41485 4.74418 7.26785 5.89536 7.26785H5.91784ZM9.53054 19.8918H12.9601V13.6895C12.9601 13.3579 12.9826 13.0256 13.0731 12.7888C13.321 12.1251 13.8853 11.4383 14.833 11.4383C16.0738 11.4383 16.5704 12.4568 16.5704 13.9502V19.8918H20V13.523C20 10.1114 18.3081 8.52379 16.0516 8.52379C14.2015 8.52379 13.389 9.63681 12.9376 10.395H12.9604V8.78446H9.53084C9.5755 9.82651 9.53054 19.8918 9.53054 19.8918Z" fill="#C2C2C2"/>
+                            </svg>
+    
+                        </div>
+                        <a href="#" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/next.js"></script>
+</footer>
+</html>
